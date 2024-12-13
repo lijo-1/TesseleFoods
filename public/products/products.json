@@ -1,0 +1,56 @@
+{
+    "bestsellers": [
+        {
+            "id": 3,
+            "name": "Dove Soap",
+            "price": 40,
+            "quantity": "1 pc"
+        },
+        {
+            "id": 5,
+            "name": "Chili Powder",
+            "price": 60,
+            "quantity": "250g"
+        }
+    ],
+    "Soap": [
+        {
+            "id": 1,
+            "name": "Dettol Soap",
+            "price": 30,
+            "quantity": "1 pc"
+        },
+        {
+            "id": 2,
+            "name": "Lux Soap",
+            "price": 25,
+            "quantity": "1 pc"
+        },
+        {
+            "id": 3,
+            "name": "Dove Soap",
+            "price": 40,
+            "quantity": "1 pc"
+        }
+    ],
+    "Masalas": [
+        {
+            "id": 4,
+            "name": "Turmeric Powder",
+            "price": 50,
+            "quantity": "500g"
+        },
+        {
+            "id": 5,
+            "name": "Chili Powder",
+            "price": 60,
+            "quantity": "250g"
+        },
+        {
+            "id": 6,
+            "name": "Coriander Powder",
+            "price": 45,
+            "quantity": "200g"
+        }
+    ]
+}

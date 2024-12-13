@@ -12,7 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        proximaregular:["var(--font-prox-regular)"],
+        proximasemibold:["var(--font-prox-semibold)"],
+        proximaextrabold:["var(--font-prox-extrabold)"],
+      }
     },
+  
   },
   plugins: [],
 } satisfies Config;
