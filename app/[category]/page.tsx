@@ -13,24 +13,17 @@ type ProductsByCategory = {
   [category: string]: Product[]; // Each category maps to an array of products
 };
 
-type Props = {
-  params: {
-    category: string;
-  };
-};
+// Correctly type the PageProps to reflect that params is a Promise
+interface PageProps {
+  params: Promise<{ category: string }>;
+}
 
-// Dynamically generate the metadata based on the category
-export const generateMetadata = ({ params }: Props) => {
-  const { category } = params;
+// Refactor the component to await the params
+const Page = async ({ params }: PageProps) => {
+  // Wait for the params to resolve
+  const { category } = await params;
 
-  return {
-    title: `Tessele Foods | ${category.charAt(0).toUpperCase() + category.slice(1)}`, // Capitalize category name
-    description: `Browse products in the ${category} category.`,
-  };
-};
-
-//params destructured here {}
-const Page = ({ params: { category } }: Props) => {
+  // Filter products based on the category
   const filteredProducts: Product[] =
     (products as ProductsByCategory)[category] || [];
 

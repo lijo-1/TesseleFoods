@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import LayoutContent from "./layoutcontent";
+import LayoutContent from "../app/LayoutContent"
 
 const proximaextrabold = localFont({
   src: "/fonts/proximaextrabold.otf",
@@ -24,13 +24,15 @@ export const metadata = {
   description: "This is my Homepage",
 };
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: {
+  children: React.ReactNode;
+}) => {
   return (
     <html lang="en">
       <body
         className={`${proximaextrabold.variable} ${proximasemibold.variable} ${proximaregular.variable} font-proximaregular`}
       >
-        <LayoutContent>{children}</LayoutContent>
+        <LayoutContent >{children}</LayoutContent>
       </body>
     </html>
   );

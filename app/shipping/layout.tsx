@@ -5,7 +5,9 @@ export const metadata = {
   description: "This is my Shipping Page",
 };
 
-const layout = ({ children }) => {
+const layout = ({ children }: {
+  children: React.ReactNode;
+}) => {
   return (
     <div className=" lg:mx-[250px] bg-[#F0F0F5]">
       <CartHeader heading="Shipping Info" customStyles={"bg-[#5D89BA]"} />

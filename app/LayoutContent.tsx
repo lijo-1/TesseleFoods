@@ -3,7 +3,9 @@ import { usePathname } from "next/navigation";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 
-const LayoutContent = ({ children }) => {
+const LayoutContent = ({ children }: {
+  children: React.ReactNode;
+}) => {
   const pathname = usePathname();
 
   // Exclude the layout for the `/cart` and `/shipping` routes

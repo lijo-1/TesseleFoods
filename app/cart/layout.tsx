@@ -6,7 +6,9 @@ export const metadata = {
   description: "This is my cart Page",
 };
 
-const cartlayout = ({ children }) => {
+const cartlayout = ({ children }: {
+  children: React.ReactNode;
+}) => {
   return (
     <div className=" lg:mx-[250px] bg-[#F0F0F5]">
       <CartHeader />
